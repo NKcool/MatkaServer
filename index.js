@@ -11,7 +11,9 @@ app.use(cors());
 app.use(express.json());
 
 // Basic route
-
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
 
 app.get('/number', (req, res) => {
     const url = 'https://dpbossss.services/';
